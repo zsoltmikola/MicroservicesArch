@@ -10,6 +10,7 @@
 		D7BF3BCB1E6B5C9B005680A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3BCA1E6B5C9B005680A7 /* AppDelegate.swift */; };
 		D7BF3BD21E6B5C9B005680A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BF3BD11E6B5C9B005680A7 /* Assets.xcassets */; };
 		D7BF3BDE1E6B60D4005680A7 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */; };
+		F2A3F7301E6CC09D006907DB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3F72F1E6CC09D006907DB /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		D7BF3BD11E6B5C9B005680A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7BF3BD61E6B5C9B005680A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventBus.swift; path = Libraries/EventBus.swift; sourceTree = "<group>"; };
+		F2A3F72F1E6CC09D006907DB /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Libraries/Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */,
+				F2A3F72F1E6CC09D006907DB /* Event.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BF3BCB1E6B5C9B005680A7 /* AppDelegate.swift in Sources */,
+				F2A3F7301E6CC09D006907DB /* Event.swift in Sources */,
 				D7BF3BDE1E6B60D4005680A7 /* EventBus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +247,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MicroservicesArch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autoscout24.MicroservicesArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -256,6 +261,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MicroservicesArch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autoscout24.MicroservicesArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +288,7 @@
 				D7BF3BDB1E6B5C9B005680A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
