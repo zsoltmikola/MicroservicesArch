@@ -12,6 +12,17 @@ struct Event{
 
     let time = Date()
     let domain : String
-    
-    
+    let object : [AnyHashable : Any]?
+
+    init(fromNotification notification:Notification) {
+        object = notification.userInfo
+        domain = Event.camelCaseToDomain(camelcaseText: notification.name.rawValue)
+    }
+
+    fileprivate static func camelCaseToDomain(camelcaseText:String) -> String{
+
+        return camelcaseText.replacingOccurrences(of: "Notification", with: "")
+
+        //return unimplemented()
+    }
 }

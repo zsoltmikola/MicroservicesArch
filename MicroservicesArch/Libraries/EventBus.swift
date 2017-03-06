@@ -10,7 +10,7 @@ import UIKit
 
 class EventBus: NSObject {
 
-    var events = [Notification]()
+    var events = [Event]()
 
     override init(){
         super.init()
@@ -18,12 +18,12 @@ class EventBus: NSObject {
     }
 
     func isNotified(notification : Notification){
-        events.append(notification)
+        events.append(Event(fromNotification: notification))
     }
 
-    func notifications() {
-        for notification in events {
-            print(notification.name)
+    func listofevents() {
+        for event in events {
+            print(event.domain)
         }
     }
 }
