@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D7BF3BCB1E6B5C9B005680A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3BCA1E6B5C9B005680A7 /* AppDelegate.swift */; };
 		D7BF3BD21E6B5C9B005680A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BF3BD11E6B5C9B005680A7 /* Assets.xcassets */; };
-		D7BF3BDE1E6B60D4005680A7 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */; };
-		F2A3F7301E6CC09D006907DB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3F72F1E6CC09D006907DB /* Event.swift */; };
+		D7BF3BDE1E6B60D4005680A7 /* NotificationBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3BDD1E6B60D4005680A7 /* NotificationBus.swift */; };
+		F2E69B521E6F630800778DE5 /* Notification+Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E69B511E6F630800778DE5 /* Notification+Bus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +18,8 @@
 		D7BF3BCA1E6B5C9B005680A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7BF3BD11E6B5C9B005680A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7BF3BD61E6B5C9B005680A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventBus.swift; path = Libraries/EventBus.swift; sourceTree = "<group>"; };
-		F2A3F72F1E6CC09D006907DB /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Libraries/Event.swift; sourceTree = "<group>"; };
+		D7BF3BDD1E6B60D4005680A7 /* NotificationBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationBus.swift; path = Libraries/NotificationBus.swift; sourceTree = "<group>"; };
+		F2E69B511E6F630800778DE5 /* Notification+Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notification+Bus.swift"; path = "Libraries/Notification+Bus.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 		D7BF3BDC1E6B5F8C005680A7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D7BF3BDD1E6B60D4005680A7 /* EventBus.swift */,
-				F2A3F72F1E6CC09D006907DB /* Event.swift */,
+				D7BF3BDD1E6B60D4005680A7 /* NotificationBus.swift */,
+				F2E69B511E6F630800778DE5 /* Notification+Bus.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BF3BCB1E6B5C9B005680A7 /* AppDelegate.swift in Sources */,
-				F2A3F7301E6CC09D006907DB /* Event.swift in Sources */,
-				D7BF3BDE1E6B60D4005680A7 /* EventBus.swift in Sources */,
+				D7BF3BDE1E6B60D4005680A7 /* NotificationBus.swift in Sources */,
+				F2E69B521E6F630800778DE5 /* Notification+Bus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

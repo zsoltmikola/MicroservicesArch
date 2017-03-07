@@ -13,12 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    let eventBus = EventBus()
+    let notificationBus = NotificationBus()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        print(eventBus.listofevents())
+        print(notificationBus.listofNotifications())
 
         return true
     }

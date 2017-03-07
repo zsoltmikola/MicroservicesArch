@@ -8,9 +8,9 @@
 
 import UIKit
 
-class EventBus: NSObject {
+class NotificationBus: NSObject {
 
-    var events = [Event]()
+    var notifications = [Notification]()
 
     override init(){
         super.init()
@@ -18,12 +18,12 @@ class EventBus: NSObject {
     }
 
     func isNotified(notification : Notification){
-        events.append(Event(fromNotification: notification))
+        notifications.append(notification)
     }
 
-    func listofevents() {
-        for event in events {
-            print(event.domain)
+    func listofNotifications() {
+        for notification in notifications {
+            print(notification.domain)
         }
     }
 }
