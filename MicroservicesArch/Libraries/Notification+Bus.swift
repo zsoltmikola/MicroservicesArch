@@ -15,10 +15,11 @@ extension Notification {
         let pattern = 	"([a-z]+)"
         let regex = try! NSRegularExpression(pattern: pattern, options: .allowCommentsAndWhitespace)
         name = name.replacingOccurrences(of: "_", with: "")
-
+        name = name.replacingOccurrences(of: "Notification", with: "")
+        
         name = regex.stringByReplacingMatches(in: name, options: .reportProgress, range: NSMakeRange(0, name.characters.count), withTemplate: "$1.")
         
-        return name.replacingOccurrences(of: ".Notification.", with: "").lowercased()
+        return name.substring(to: name.index(before: name.endIndex)).lowercased()
     }
     
     var object : [AnyHashable : Any]? {
